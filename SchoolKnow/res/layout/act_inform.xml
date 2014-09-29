@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6">
+    
+    <ListView
+        android:id="@+id/inform_lv" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#D2D2D2"
+        android:dividerHeight="0.5dp"
+        style="@style/remove_listview_default"
+        android:background="#F9F9F9"/>
+    
+      <ImageView
+        android:id="@+id/inform_empty_failed"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/empty_failed"
+        android:visibility="gone"/>
+    
+    
+
+</RelativeLayout>

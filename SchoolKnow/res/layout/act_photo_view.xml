@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent" 
+		android:orientation="vertical"
+		android:background="#212021"> 
+		
+ 		<com.pw.schoolknow.widgets.QGallery 
+     	android:layout_height="match_parent" 
+ 		android:layout_width="match_parent" 
+ 		android:spacing="30dip"
+ 		android:id="@+id/mygallery"/>
+  
+ 		<TextView
+ 		    android:id="@+id/mygallery_num" 
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_gravity="bottom"
+ 		    android:gravity="center_horizontal"
+ 		    android:layout_marginBottom="20dp"
+ 		    android:textStyle="bold"
+ 		    android:textColor="@color/white"
+ 		    android:shadowColor="#ccc"
+ 		    android:shadowRadius="1"
+ 		    android:textSize="16sp"/>
+</FrameLayout>

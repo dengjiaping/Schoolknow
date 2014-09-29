@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/market_content_head_title" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="10dp"/>
+    
+     <TextView
+        android:id="@+id/market_content_head_content" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"/>
+     
+      <TextView
+        android:id="@+id/market_content_head_price" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+      
+	   <TextView
+       android:id="@+id/market_content_head_phone" 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="@color/black"
+       android:layout_marginLeft="10dp"/>
+    
+     <com.pw.schoolknow.widgets.NoScrollGridView
+        android:id="@+id/market_content_head_gv"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        style="@style/remove_listview_default"
+        android:layout_margin="5dp"
+        android:stretchMode="columnWidth"
+        android:columnWidth="80dip"
+     	android:gravity="center"
+     	android:verticalSpacing="5dp"
+     	android:horizontalSpacing="5dp"
+     	android:layout_marginTop="5dp"/>
+     
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="20dp"
+         android:background="@color/weibo_bg"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="5dp"
+         android:text="@string/comment_1"
+         android:textColor="@color/weibo_textcolor"
+         android:paddingLeft="10dp"/>
+
+</LinearLayout>

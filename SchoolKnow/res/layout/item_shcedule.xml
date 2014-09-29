@@ -1,0 +1,78 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/press_bg_selector"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:minHeight="84dp"
+    android:baselineAligned="false" >
+    
+    <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_weight="9"> 
+         
+        <TextView
+            android:id="@+id/schedule_oneclass_time" 
+            android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:textColor="#EB6100"
+         	android:layout_gravity="center_vertical"
+         	android:gravity="center_horizontal"
+         	android:textSize="20sp"/>
+        
+    </LinearLayout>    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        
+        <TextView
+	         android:id="@+id/schedule_oneclass_subject"  
+	         android:layout_width="wrap_content"
+	      	 android:layout_height="wrap_content"
+	      	 android:textColor="#27A4F3"
+	      	 android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/schedule_oneclass_teacher"   
+            android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:textColor="#76746F"
+         	android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/schedule_oneclass_address"   
+            android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:textColor="#76746F"/>
+        
+        <TextView
+            android:id="@+id/schedule_oneclass_subject_2"  
+            android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:textColor="#27A4F3"
+         	android:textSize="17sp"
+         	android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/schedule_oneclass_teacher_2"   
+            android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:textColor="#76746F"
+         	android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/schedule_oneclass_address_2"   
+            android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:textColor="#76746F"/>
+        
+    </LinearLayout>                
+</LinearLayout>
+<include layout="@layout/part_listview_divide"/>
+</LinearLayout>

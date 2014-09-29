@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_above="@+id/ask_new_question_titlebarPar"
+        android:id="@+id/ask_new_question_content" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:inputType="none"
+        android:hint="@string/ask_input_tip"    
+        android:background="@drawable/market_btn_rect_gray_normal"
+        android:padding="5dp"/>
+    
+    
+    <GridView
+        android:layout_above="@+id/ask_new_question_titlebarPar"
+        android:id="@+id/ask_new_question_gv_img" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:columnWidth="80dip"
+        android:gravity="center"
+        style="@style/remove_listview_default"
+        android:verticalSpacing="5dp"/>
+    
+    
+   <LinearLayout
+        android:id="@+id/ask_new_question_titlebarPar"  
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:orientation="vertical">
+        
+     <LinearLayout
+        android:id="@+id/ask_new_question_titlebar" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbar_background"
+        android:gravity="center_vertical">
+        
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/compose_camerabutton_background"
+             android:contentDescription="@string/app_name"
+             android:layout_marginLeft="15dp"/>
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/compose_toolbar_picture"
+             android:contentDescription="@string/app_name"
+             android:layout_marginLeft="35dp"/>
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/compose_emoticonbutton_background"
+             android:contentDescription="@string/app_name"
+             android:layout_marginLeft="35dp"/>
+        
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/ask_emotionbox"  
+        android:layout_height="135dp"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+         
+        <include layout="@layout/part_defalut_emotion_layout"/>
+        
+    </LinearLayout>
+    
+  </LinearLayout>
+    
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+	    android:orientation="vertical">
+	<LinearLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+	    android:orientation="horizontal"
+	    android:paddingLeft="8dp"
+	    android:paddingRight="8dp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:background="@drawable/press_bg_selector">
+	    
+	    <ImageView
+	        android:id="@+id/market_tz_lv_item_img"  
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="5"
+	        android:src="@drawable/market_tz"
+	        android:contentDescription="@string/app_name"/>
+	    
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="80dp"
+	        android:layout_weight="2"
+	        android:layout_marginLeft="8dp">
+	        
+	         <TextView
+		        android:id="@+id/market_tz_lv_item_text" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/black"
+		        android:textSize="16sp"/>
+	         <TextView
+		        android:id="@+id/market_tz_lv_item_time" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentLeft="true"
+		        android:textSize="12sp"
+		        android:textColor="@color/weibo_textcolor"/>
+	         
+	         <TextView
+	            android:id="@+id/market_tz_lv_item_reply" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:textColor="@color/gray"/>
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+	
+	<View 
+	    android:layout_width="wrap_content"
+		android:layout_height="0.5dp"
+		android:background="#B7BCBC"/>
+	
+	</LinearLayout>

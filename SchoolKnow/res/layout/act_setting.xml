@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg">
+    
+    <com.pw.schoolknow.widgets.MyScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:layout_marginTop="5dp">
+    
+  
+    
+    <!-- 设置选项 -->
+    <LinearLayout 
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+     
+        <RelativeLayout
+        android:id="@+id/setting_set_2gimg_layout"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_top">
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/receive_push_message"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <ToggleButton 
+			android:background="@drawable/selector_butn_toggle"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:checked="true" android:textOn="" android:textOff="" 
+			android:text="" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_center">
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/twog_load_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <ToggleButton 
+			android:background="@drawable/selector_butn_toggle"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:checked="true" android:textOn="" android:textOff="" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_center">
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/auto_test_update"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <ToggleButton 
+			android:background="@drawable/selector_butn_toggle"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:checked="true" android:textOn="" android:textOff="" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_bottom">
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/clear_cache"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/zerom"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#8A8A8A"/>
+        
+    </RelativeLayout>
+        
+    </LinearLayout>
+    
+      <!-- 检查新版本,反馈意见，关于 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+    	
+        <RelativeLayout
+        android:id="@+id/setting_check_version_layout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_top">
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/check_new_version"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+         <TextView
+             android:id="@+id/setting_check_version" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/download"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#8A8A8A"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/setting_check_suggest_layout"   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_center">
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/suggest"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/setting_check_about_layout"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_bottom">
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/about"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+    </RelativeLayout>
+        
+    </LinearLayout>
+    
+    
+    <Button
+        android:id="@+id/setting_exit_login_btn"  
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/exit_login"
+        android:background="@drawable/btn_red_selector"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    
+
+</LinearLayout>
+
+</com.pw.schoolknow.widgets.MyScrollView >
+    
+</LinearLayout>
+

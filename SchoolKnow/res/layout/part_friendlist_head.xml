@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  	android:background="@drawable/s_search_back">
+    
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:inputType="text"
+        android:background="@null"
+        android:drawableLeft="@drawable/icon_search_small"
+        android:drawablePadding="5dp"
+        android:hint="@string/search"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#333"
+        android:gravity="center_vertical"/>
+
+</RelativeLayout>

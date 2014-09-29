@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/weibo_bg">
+    
+    <ListView 
+        android:id="@+id/friend_add_verify_lv"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        style="@style/remove_listview_default"
+        android:divider="@null"
+        android:dividerHeight="7dp"
+        android:scrollbars="none"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"/>
+    
+
+</LinearLayout>

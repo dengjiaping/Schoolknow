@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.baidu.mapapi.map.MapView 
+         android:id="@+id/mapView"  
+         android:layout_width="fill_parent"  
+         android:layout_height="fill_parent"  
+         android:clickable="true" /> 
+    
+    <ImageButton
+        android:id="@+id/map_location_btn" 
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_locatebutton"
+        android:src="@drawable/main_icon_nearby"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:layout_margin="5dp"/>
+    
+
+</RelativeLayout>

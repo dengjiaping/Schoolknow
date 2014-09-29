@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp">
+    
+    <TextView
+        android:id="@+id/item_bukao_sub" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#175A7F"/>
+     <TextView
+         android:id="@+id/item_bukao_time"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#727272"
+        android:layout_marginTop="2dp"/>
+     <TextView
+         android:id="@+id/item_bukao_room"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#727272"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>

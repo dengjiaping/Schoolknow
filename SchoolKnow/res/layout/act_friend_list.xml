@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg">
+    
+    <com.pw.schoolknow.widgets.XListView
+        android:id="@+id/friend_list_lv" 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        style="@style/remove_listview_default"
+        android:divider="@null"
+        android:scrollbars="none"/>
+    
+     <TextView
+        android:id="@+id/friend_list_MySideTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxWidth="70dip"
+        android:minWidth="70dip"
+        android:padding="10dip"
+        android:textColor="#99FFFFFF"
+        android:textSize="50sp"
+        android:background="@drawable/toast_letter_bg"
+        android:visibility="gone" />
+    
+    <com.pw.schoolknow.widgets.MySideBar
+        android:id="@+id/friend_list_rightSlideBar" 
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"/>
+
+  
+</FrameLayout>
+

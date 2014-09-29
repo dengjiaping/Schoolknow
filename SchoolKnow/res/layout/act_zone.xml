@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/knock_background">
+<com.pw.schoolknow.widgets.MyScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:background="@drawable/knock_card_background">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="200dp"
+        	android:background="@drawable/knock_card_defalut_bk"
+        	android:layout_marginLeft="6dp"
+        	android:layout_marginRight="7dp"
+        	android:orientation="vertical">
+        	
+            <ImageView
+                android:id="@+id/friend_zone_head" 
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/default_head"
+                android:contentDescription="@string/app_name"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+            
+            <TextView
+                android:id="@+id/friend_zone_nick"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#333"
+                android:shadowRadius="1"
+                android:shadowDx="1"
+                android:shadowDy="1"/>
+            
+             <ImageView
+                android:id="@+id/friend_zone_sex"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/app_name"/>
+            
+            <TextView
+                android:id="@+id/friend_zone_college"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:shadowColor="#333"
+                android:shadowRadius="1"
+                android:shadowDx="1"
+                android:shadowDy="1"/>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:minHeight="250dp"
+        	android:gravity="center_vertical">
+            
+            <Button
+                android:id="@+id/friend_zone_add" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_selector"
+                android:text="@string/add_to_friend"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="7dp"/>
+            
+             <Button
+                  android:id="@+id/friend_zone_chat"  
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_selector"
+                android:text="@string/online_to_chat"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="7dp"/>
+            
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    
+</com.pw.schoolknow.widgets.MyScrollView>
+</LinearLayout>

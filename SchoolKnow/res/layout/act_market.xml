@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <com.pw.schoolknow.widgets.XListView
+        android:id="@+id/market_tz_lv" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        style="@style/remove_listview_default"
+        android:scrollbars="none"/>
+    
+   <LinearLayout
+       android:id="@+id/market_tz_empty" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:visibility="gone">
+        
+       <ImageView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:contentDescription="@string/app_name"
+           android:src="@drawable/empty_failed"
+           android:layout_gravity="center_horizontal"/>
+       
+       <TextView 
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:text="@string/no_goods_info"
+           android:layout_marginTop="5dp"
+           android:textColor="@color/weibo_textcolor"
+           android:textSize="18sp"/>
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

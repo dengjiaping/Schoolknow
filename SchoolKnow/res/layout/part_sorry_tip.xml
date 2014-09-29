@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/part_sorry_tip_layout">
+    
+    <ImageView
+        android:id="@+id/part_sorry_tip_img" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/sorry_icon_location_fail"
+        android:layout_centerHorizontal="true"/>
+    
+    <TextView
+        android:id="@+id/part_sorry_tip_text" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/part_sorry_tip_img"
+        android:text="@string/net_sorry_tip"
+        android:textSize="16sp"
+        android:textColor="#545454"
+        android:layout_marginTop="10dp"/>
+    
+
+</RelativeLayout>

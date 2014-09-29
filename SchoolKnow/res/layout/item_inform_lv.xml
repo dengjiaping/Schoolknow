@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:padding="2dp"
+    android:background="@drawable/press_bg_selector">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            
+           <ImageView
+            android:id="@+id/inform_item_userimg" 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/userimage"/>
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/inform_item_num" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tabbar_indicator1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="12sp"
+            android:text="1"/>
+        
+    </RelativeLayout>
+    
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="5dp">
+        
+         <TextView
+        	android:id="@+id/inform_item_username" 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:singleLine="true"
+        	android:textColor="@color/black"
+        	android:textSize="18sp"
+        	android:layout_marginTop="3dp"/>
+        
+         <TextView
+        	android:id="@+id/inform_item_userinfo" 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/inform_item_username"
+        	android:singleLine="true"
+        	android:textColor="#939393"
+        	android:layout_marginTop="4dp"
+        	android:textSize="13sp"/>
+         
+          <TextView
+	        android:id="@+id/inform_item_time" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="5dp"
+	        android:textSize="12sp"
+	        android:textColor="#A9A9A9"/>
+         
+     </RelativeLayout>
+
+    
+</LinearLayout>
+

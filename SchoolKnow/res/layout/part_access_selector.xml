@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/pj_lv_tip" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/font_style"/>
+    
+    <RadioGroup
+        android:id="@+id/pj_lv_radio" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/pj_lv_you" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pj_lv_you"/>
+        <RadioButton
+            android:id="@+id/pj_lv_liang"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pj_lv_liang"/>
+        <RadioButton
+            android:id="@+id/pj_lv_zhong" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pj_lv_zhong"/>
+        <RadioButton
+            android:id="@+id/pj_lv_cha" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pj_lv_cha"/>
+    </RadioGroup>
+    
+
+</LinearLayout>

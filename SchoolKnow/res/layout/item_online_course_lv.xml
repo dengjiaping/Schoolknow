@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/press_bg_selector"
+    android:padding="5dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp">
+    
+      <TextView
+        android:id="@+id/online_course_subject"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/online_course_param"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    
+    <TextView
+        android:id="@+id/online_course_option" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/online_course_plan"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/online_course_reality"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/online_course_credit"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+   
+    
+
+</LinearLayout>

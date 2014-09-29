@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F5F7">
+	
+     <ListView
+      android:id="@+id/schoolfellow_content_comment_lv"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      style="@style/remove_listview_default"
+      android:divider="@null"
+      android:scrollbars="none"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:layout_alignParentTop="true"
+      android:layout_above="@+id/schoolfellow_content_reply_box"
+      android:background="@drawable/messages_card_background_below"/>
+
+	<include layout="@layout/part_comment_box"
+	    android:id="@+id/schoolfellow_content_reply_box"/>
+
+</RelativeLayout>

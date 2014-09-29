@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/catalog_item_bg"
+    android:paddingBottom="15dp">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/friend_request"
+            android:textColor="@color/weibo_textcolor"/>
+        
+        <TextView
+            android:id="@+id/item_friend_add_time"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/weibo_textcolor"
+            android:textSize="13sp"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+        
+        <ImageView
+            android:id="@+id/item_friend_add_head" 
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_head"
+            android:layout_marginLeft="10dp"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:layout_toRightOf="@+id/item_friend_add_head"
+        	android:layout_toLeftOf="@+id/item_friend_add_text_state"
+        	android:layout_marginLeft="6dp">
+        	
+            <TextView
+                android:id="@+id/item_friend_add_nick"  
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textSize="16sp"
+            	android:textStyle="bold"
+            	android:textColor="@color/black"/>
+            
+             <TextView 
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/friend_request_tip"
+            	android:textColor="@color/black"
+            	android:layout_marginTop="4dp"/>
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/item_friend_add_text_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/weibo_textcolor"
+            android:textSize="15sp"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/item_friend_add_btn_layout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+        
+        <Button
+            android:id="@+id/item_friend_add_btn_agree" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agree"
+            android:background="@drawable/btn_dialog_selector"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+        
+        <Button
+            android:id="@+id/item_friend_add_btn_refuse"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refuse"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_dialog_selector"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+        
+        <Button
+            android:id="@+id/item_friend_add_btn_ignore"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ignore"
+             android:background="@drawable/btn_dialog_selector"
+              android:paddingLeft="20dp"
+             android:paddingRight="20dp"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

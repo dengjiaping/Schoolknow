@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_app_intro"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="30dp"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edit_top_normal"
+        android:layout_marginTop="20dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/img_act_login_uid"
+            android:contentDescription="@string/app_name"
+            android:layout_marginLeft="15dp"/>
+        
+        <AutoCompleteTextView
+            android:id="@+id/login_edit_uid" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:inputType="textEmailAddress"
+	        android:hint="@string/input_email"
+	        android:paddingLeft="15dp"
+	        android:textSize="16sp"
+	        android:background="@null"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edit_bottom_normal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/img_act_login_pwd"
+            android:contentDescription="@string/app_name"
+            android:layout_marginLeft="15dp"/>
+        
+        <EditText
+            android:id="@+id/login_edit_pwd"  
+	        android:layout_width="fill_parent"
+	        android:layout_height="45dp"
+	        android:inputType="textPassword"
+	        android:background="@null"
+	        android:hint="@string/input_password"
+	        android:paddingLeft="15dp"
+	        android:textSize="16sp"/>
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/login_btn_login"  
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_green_selector"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"/>
+    
+    <Button
+        android:id="@+id/login_btn_reg"  
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_blue_selector"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+    
+
+</LinearLayout>

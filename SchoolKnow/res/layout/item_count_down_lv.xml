@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bg_countdown_item">
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/countdown_timenum"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        
+         <TextView
+            android:id="@+id/countdown_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            android:layout_marginBottom="3dp"/>
+         <TextView
+            android:id="@+id/countdown_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#979797"
+            android:drawableLeft="@drawable/pic_time"
+            android:drawablePadding="3dp"/>
+         <TextView
+            android:id="@+id/countdown_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#979797"
+            android:drawableLeft="@drawable/pic_address"
+            android:drawablePadding="3dp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/countdown_timenum"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true">
+        
+        <TextView
+            android:id="@+id/countdown_daynum" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#BC2827"
+            android:textSize="26sp"
+            android:layout_marginBottom="3dp"/>
+         <TextView
+            android:id="@+id/countdown_tip"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day"
+            android:textColor="#8D8D8D"
+            android:layout_marginLeft="3dp"/>
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="0.8dp"
+    android:background="#E6E6E6"/>
+
+</LinearLayout>

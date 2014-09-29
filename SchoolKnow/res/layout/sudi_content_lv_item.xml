@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/weibo_bg"
+    android:padding="15dp">
+    
+    
+   		<TextView
+   		    android:id="@+id/sudi_content_lv_item_time"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:textColor="#6192C8"
+   		    android:textSize="16sp"/>
+   		
+   		<TextView
+   		    android:id="@+id/sudi_content_lv_item_context"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:textColor="@color/weibo_textcolor"
+   		    android:layout_marginTop="5dp"/>
+    
+
+</LinearLayout>

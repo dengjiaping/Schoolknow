@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    
+    <EditText
+        android:id="@+id/library_edit_id" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/library_login_id"
+        android:background="@drawable/radius_listview_default"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"/>
+    
+     <EditText
+        android:layout_below="@+id/library_edit_id"
+        android:id="@+id/library_edit_pwd" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textPassword"
+        android:hint="@string/library_login_pwd"
+        android:background="@drawable/radius_listview_default"
+        android:paddingLeft="20dp"
+         android:textSize="16sp"/>
+     
+     <TextView
+        android:id="@+id/library_login_tip"
+        android:layout_below="@+id/library_edit_pwd"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:textSize="13sp"
+    	android:layout_marginTop="5dp"
+    	android:text="@string/library_tip"
+    	style="@style/font_style"/>
+    
+    <Button
+        android:layout_below="@+id/library_login_tip"
+        android:id="@+id/library_login_btn"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+        android:background="@drawable/btn_green_selector"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="@string/login_library"/>
+     
+     
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/common_button_white_left_bg"
+            android:text="@string/continue_last_search"
+            android:textColor="#828282"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/common_button_white_right_bg"
+            android:text="@string/my_library_info"
+            android:textColor="#828282"/>
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>
+

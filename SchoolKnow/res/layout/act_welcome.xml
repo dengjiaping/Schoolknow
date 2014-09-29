@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome"
+    android:id="@+id/welcome_bg"
+    android:background="@color/white">
+    
+    <ImageView
+        android:id="@+id/img_welcome_logo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_ecjtu"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:layout_below="@+id/img_welcome_logo"
+        android:id="@+id/welcome_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/gray"/>
+
+</RelativeLayout>

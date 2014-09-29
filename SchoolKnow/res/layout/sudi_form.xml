@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/weibo_bg"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    
+    
+    <TextView
+        android:id="@+id/sudi_form_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/spinner_select_n"
+        android:text="@string/select_sudi_company"
+        android:textColor="#666"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"/>
+    
+    <EditText
+        android:id="@+id/sudi_form_et" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/sudi_book_id"
+        android:background="@drawable/radius_listview_default"
+        android:textColor="#666"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"/>
+    
+    <Button
+         android:id="@+id/sudi_form_btn" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue_selector"
+        android:text="@string/search"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"/>
+    
+
+</LinearLayout>

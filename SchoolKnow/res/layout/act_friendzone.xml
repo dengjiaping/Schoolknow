@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp">
+        
+        <ImageView
+            android:id="@+id/my_friendzone_headimg"
+            android:layout_height="55dp"
+            android:contentDescription="@string/app_name"
+        	android:layout_width="55dp"
+        	android:src="@drawable/userimage"/>
+        
+        <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+            
+            <TextView
+                android:id="@+id/my_friendzone_nickname"
+                android:layout_height="wrap_content"
+        		android:layout_width="wrap_content"
+        		android:textColor="#3A3A3A"
+        		android:textSize="18sp"
+        		android:layout_marginTop="6dp"/>
+            <TextView
+                android:id="@+id/my_friendzone_uid"
+                android:layout_height="wrap_content"
+        		android:layout_width="wrap_content"
+        		android:textColor="#969696"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:text="@string/friend_remark"
+        	android:textColor="#3A3A3A"
+        	android:textSize="16sp"
+        	android:layout_marginLeft="4dp"/>
+        
+         <TextView
+             android:id="@+id/my_friendzone_remark"  
+            android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:textColor="#969696"
+        	android:layout_marginLeft="100dp"
+        	android:textSize="14sp"
+        	android:layout_centerVertical="true"/>
+    
+    </RelativeLayout>
+    
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="0.8dp"
+    android:background="#F1F1F1"/>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:text="@string/friend_address"
+        	android:textColor="#3A3A3A"
+        	android:textSize="16sp"
+        	android:layout_marginLeft="4dp"/>
+        
+         <TextView
+            android:id="@+id/my_friendzone_address"  
+            android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:textColor="#969696"
+        	android:layout_marginLeft="100dp"
+        	android:textSize="14sp"
+        	android:layout_centerVertical="true"/>
+    
+    </RelativeLayout>
+    
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="0.8dp"
+    android:background="#F1F1F1"/>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:text="@string/college"
+        	android:textColor="#3A3A3A"
+        	android:textSize="16sp"
+        	android:layout_marginLeft="4dp"/>
+        
+         <TextView
+            android:id="@+id/my_friendzone_college"  
+            android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:textColor="#969696"
+        	android:layout_marginLeft="100dp"
+        	android:textSize="14sp"
+        	android:layout_centerVertical="true"/>
+    
+    </RelativeLayout>
+    
+     <View
+    android:layout_width="match_parent"
+    android:layout_height="0.8dp"
+    android:background="#F1F1F1"/>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:text="@string/friend_mood"
+        	android:textColor="#3A3A3A"
+        	android:textSize="16sp"
+        	android:layout_marginLeft="4dp"/>
+        
+         <TextView
+            android:id="@+id/my_friendzone_mood"  
+            android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:text=""
+        	android:textColor="#969696"
+        	android:textSize="14sp"
+        	android:layout_marginLeft="100dp"
+        	android:layout_centerVertical="true"/>
+    
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/my_friendzone_btn" 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/white"
+    	android:background="@drawable/btn_blue_selector"
+    	android:text="@string/send_to_friend"
+    	android:textStyle="bold"
+    	android:layout_marginTop="20dp"/>
+    
+
+</LinearLayout>

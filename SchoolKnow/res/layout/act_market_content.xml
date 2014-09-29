@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg">
+    
+    <com.pw.schoolknow.widgets.XListView
+        android:id="@+id/market_content_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/remove_listview_default"
+        android:layout_above="@+id/market_content_comment_box"
+        android:scrollbars="none"
+        android:background="@drawable/messages_card_background_below"
+        android:paddingBottom="5dp"
+        android:divider="@null"
+        android:layout_alignParentTop="true"/>
+    
+    <include layout="@layout/part_comment_box"
+        android:id="@+id/market_content_comment_box"/>
+    
+</RelativeLayout>

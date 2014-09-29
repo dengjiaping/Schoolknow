@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg"
+    android:scrollbars="none">
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="7dp"
+	    android:layout_marginRight="7dp">
+	    
+        <com.pw.schoolknow.widgets.NoScrollGridView
+            android:id="@+id/market_publish_gv"  
+             android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:numColumns="5"
+	    	style="@style/remove_listview_default"
+	    	android:stretchMode="columnWidth"
+        	android:columnWidth="80dip"
+        	android:gravity="center"
+        	android:layout_margin="10dp"
+        	android:verticalSpacing="5dp"/>
+        
+        <!-- 标题 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:background="@drawable/ic_widget_bg_outer"
+	    	android:layout_marginBottom="10dp">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="@string/market_title"
+	    		android:layout_gravity="center_vertical"
+	    		android:textColor="@color/white"
+	    		android:background="@drawable/bg_label"
+	    		android:minWidth="80dp"
+	    		android:gravity="center_horizontal|center_vertical"/>
+            
+            <EditText
+               	android:id="@+id/market_publish_title" 
+                android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:inputType="textMultiLine"
+	    		android:background="@null"
+	    		android:minHeight="70dp"
+	    		android:gravity="top"
+	    		android:hint="@string/market_title_tip"
+	    		android:layout_margin="4dp"/>
+        </LinearLayout>
+        
+        <!-- 商品分类 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:background="@drawable/ic_widget_bg_outer"
+	    	android:layout_marginBottom="10dp">
+            
+            
+            <TextView 
+                android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="@string/market_sort"
+	    		android:layout_gravity="center_vertical"
+	    		android:textColor="@color/white"
+	    		android:background="@drawable/bg_label"
+	    		android:minWidth="80dp"
+	    		android:gravity="center_horizontal|center_vertical"/>
+            
+            <RelativeLayout 
+                 android:layout_width="match_parent"
+	    	     android:layout_height="wrap_content"
+	    	     android:paddingBottom="5dp">
+	    	     
+                <Spinner
+                android:id="@+id/market_publish_sort_spinner" 
+                android:layout_toLeftOf="@+id/market_publish_sort_spinner_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_margin="10dp"/>
+                
+                <ImageView
+                    android:id="@+id/market_publish_sort_spinner_icon" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/titlebar_arrow_down"
+                    android:contentDescription="@string/app_name"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/market_publish_sort_spinner"
+                    android:layout_marginRight="15dp"/>
+                
+            </RelativeLayout>
+            
+       </LinearLayout>
+       
+        <!-- 参考价格 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:background="@drawable/ic_widget_bg_outer"
+	    	android:layout_marginBottom="10dp">
+            
+            
+            <TextView 
+                android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="@string/market_price"
+	    		android:layout_gravity="center_vertical"
+	    		android:textColor="@color/white"
+	    		android:background="@drawable/bg_label"
+	    		android:minWidth="80dp"
+	    		android:gravity="center_horizontal|center_vertical"/>
+            
+            <EditText
+                android:id="@+id/market_publish_price" 
+                android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:inputType="number"
+	    		android:background="@null"
+	    		android:minHeight="30dp"
+	    		android:gravity="top"
+	    		android:layout_margin="4dp"
+	    		android:hint="@string/market_price_tip"/>
+        </LinearLayout>
+        
+        <!-- 联系电话 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:background="@drawable/ic_widget_bg_outer"
+	    	android:layout_marginBottom="10dp">
+            
+            
+            <TextView 
+                android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="@string/contacts_phone"
+	    		android:layout_gravity="center_vertical"
+	    		android:textColor="@color/white"
+	    		android:background="@drawable/bg_label"
+	    		android:minWidth="80dp"
+	    		android:gravity="center_horizontal|center_vertical"/>
+            
+            <EditText
+                android:id="@+id/market_publish_phon" 
+                android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:inputType="number"
+	    		android:background="@null"
+	    		android:minHeight="30dp"
+	    		android:gravity="top"
+	    		android:layout_margin="4dp"
+	    		android:hint="@string/contacts_phone_tip"/>
+        </LinearLayout>
+        
+        <!-- 联系地址 -->
+        
+        <!-- 
+        <LinearLayout 
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:background="@drawable/ic_widget_bg_outer"
+	    	android:layout_marginBottom="10dp">
+            
+            
+            <TextView 
+                android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="@string/contacts_address"
+	    		android:layout_gravity="center_vertical"
+	    		android:textColor="@color/white"
+	    		android:background="@drawable/bg_label"
+	    		android:minWidth="80dp"
+	    		android:gravity="center_horizontal|center_vertical"/>
+            
+            <EditText 
+                android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:inputType="number"
+	    		android:background="@null"
+	    		android:minHeight="30dp"
+	    		android:gravity="top"
+	    		android:layout_margin="4dp"
+	    		android:hint="@string/contacts_address_tip"/>
+        </LinearLayout>
+        
+         -->
+        
+        <!-- 描述 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:background="@drawable/ic_widget_bg_outer"
+	    	android:layout_marginBottom="10dp">
+            
+            
+            <TextView 
+                android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="@string/market_describe"
+	    		android:layout_gravity="center_vertical"
+	    		android:textColor="@color/white"
+	    		android:background="@drawable/bg_label"
+	    		android:minWidth="80dp"
+	    		android:gravity="center_horizontal|center_vertical"/>
+            
+            <EditText
+                android:id="@+id/market_publish_content" 
+                android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:background="@null"
+	    		android:minHeight="120dp"
+	    		android:gravity="top"
+	    		android:hint="@string/market_describe_tip"
+	    		android:layout_margin="4dp"
+	    		android:inputType="textMultiLine"/>
+        </LinearLayout>
+    
+        <Button
+            android:id="@+id/market_publish_submit"  
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_blue_selector"
+            android:text="@string/publish"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"/>
+
+	</LinearLayout>
+    
+</ScrollView>
+

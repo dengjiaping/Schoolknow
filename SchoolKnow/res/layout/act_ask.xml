@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEDE6">
+    
+    <LinearLayout
+        android:id="@+id/ask_select_btn" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:background="@drawable/bg_schedule_weeknav">
+        
+        <com.pw.schoolknow.widgets.NewsTitleTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ask_new"
+            style="@style/ask_select_bar" />
+        <com.pw.schoolknow.widgets.NewsTitleTextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ask_wait"
+            style="@style/ask_select_bar"/>
+        <com.pw.schoolknow.widgets.NewsTitleTextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ask_my"
+            style="@style/ask_select_bar"/>
+        <com.pw.schoolknow.widgets.NewsTitleTextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ask_phb"
+            style="@style/ask_select_bar"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ask_layout_content" 
+         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/ask_lv" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/remove_listview_default"
+        android:visibility="gone"/>
+
+    
+
+</LinearLayout>

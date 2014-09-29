@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    
+    <Button
+        android:id="@+id/second_class_select_btn"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/spinner_select_n"
+        android:text="@string/select_your_class"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"/>
+    
+    <Button
+        android:layout_below="@+id/second_class_select_btn"
+        android:id="@+id/second_class_select_sumbit"  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:background="@drawable/btn_green_selector"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+    
+
+</RelativeLayout>

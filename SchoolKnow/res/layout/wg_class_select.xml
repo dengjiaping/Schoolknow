@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/myalertdialog_bg"
+    android:padding="30dp">
+    
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" 
+        android:text="@string/please_select_class"
+        android:layout_marginBottom="10dp"
+        android:textColor="#8DAD52"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_normal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+           android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/college"
+        	android:layout_gravity="center_vertical"
+        	android:textColor="#8DAD52"
+        	android:paddingLeft="3dp"/>
+        
+        <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+            
+              <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="@string/app_name"
+        	android:src="@drawable/qz_icon_navbar_drop_down" 
+        	android:layout_gravity="center_vertical|right"
+        	android:layout_marginRight="15dp"/>
+              
+               <Spinner
+            android:id="@+id/class_select_college" 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	 android:layout_gravity="center_vertical"
+        	 android:background="@null"/>
+            
+        </FrameLayout>
+       
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_normal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/grade"
+           android:layout_gravity="center_vertical"
+           android:textColor="#8DAD52"
+        	android:paddingLeft="3dp"/>
+        
+         <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+               
+              <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="@string/app_name"
+        	android:src="@drawable/qz_icon_navbar_drop_down" 
+        	android:layout_gravity="center_vertical|right"
+        	android:layout_marginRight="15dp"/>
+        
+        <Spinner
+            android:id="@+id/class_select_term"  
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@null"
+        	android:layout_gravity="center_vertical"/>
+        
+         </FrameLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qz_bg_container_cell_normal"
+        android:orientation="horizontal">
+        <TextView
+           android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/classname"
+        	android:layout_gravity="center_vertical"
+        	android:textColor="#8DAD52"
+        	android:paddingLeft="3dp"/>
+        
+        <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+        
+             <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="@string/app_name"
+        	android:src="@drawable/qz_icon_navbar_drop_down" 
+        	android:layout_gravity="center_vertical|right"
+        	android:layout_marginRight="15dp"/>
+        
+        <Spinner
+             android:id="@+id/class_select_classname"  
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	 android:background="@null"
+        	 android:layout_gravity="center_vertical"/>
+        
+        
+         </FrameLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        
+        <Button
+        android:id="@+id/class_select_submit"
+        android:layout_width="88.0dip"
+       	android:layout_height="36.0dip"
+       	android:background="@drawable/search_button_bg"
+       	android:textSize="16.0sp"
+       	android:text="@string/sure"
+       	android:layout_gravity="center_horizontal"
+       	android:textColor="#66999A"
+       	android:textStyle="bold"
+       	android:layout_marginRight="10dp"/>
+    
+    <Button
+        android:id="@+id/class_select_cancel"
+        android:layout_width="88.0dip"
+       	android:layout_height="36.0dip"
+       	android:background="@drawable/search_button_bg"
+       	android:textSize="16.0sp"
+       	android:text="@string/cancel"
+       	android:layout_gravity="center_horizontal"
+       	android:textColor="#66999A"
+       	android:textStyle="bold"
+       	android:layout_marginLeft="10dp"/>
+        
+    </LinearLayout>
+    
+    
+    
+
+</LinearLayout>
+

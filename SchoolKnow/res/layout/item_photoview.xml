@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.pw.schoolknow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+    android:clickable="false">
+    
+    <com.pw.schoolknow.widgets.QImageView
+        android:id="@+id/item_photoview_img"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:focusableInTouchMode="true" />
+         
+     <com.pw.schoolknow.widgets.RoundProgressBar
+       android:id="@+id/item_photoview_pb"
+       android:layout_width="45dip"
+       android:layout_height="45dip"
+       android_custom:roundColor="#333"
+        android_custom:roundProgressColor="#D1D1D1"
+        android_custom:textColor="#fff"
+        android_custom:roundWidth="3dip"
+        android_custom:textSize="14sp"
+       android:layout_centerInParent="true"
+       android_custom:textIsDisplayable="true" />
+    
+    
+
+</RelativeLayout>

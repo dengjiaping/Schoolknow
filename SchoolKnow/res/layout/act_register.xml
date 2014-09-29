@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical">
+    
+    
+    <!-- 注册第1步 ,账号和密码-->
+    <LinearLayout
+        android:id="@+id/register_step1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        
+        <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_step3_tip"
+        style="@style/font_style"/>
+    
+     <EditText
+        android:id="@+id/register_email" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:background="@drawable/radius_listview_top"
+        style="@style/register_editor_paddingLeft"
+        android:hint="@string/input_email"/>
+      <EditText
+		android:id="@+id/register_pwd" 
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="@drawable/radius_listview_center"
+        style="@style/register_editor_paddingLeft"
+        android:hint="@string/input_password"/>
+     <EditText
+         android:id="@+id/register_pwd2"  
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="@drawable/radius_listview_bottom"
+        style="@style/register_editor_paddingLeft"
+        android:hint="@string/input_password_again"/>
+     
+     <Button
+        android:id="@+id/register_btn_reg1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="@string/next_step"
+        android:layout_marginTop="20dp"
+        style="@style/register_btn"/>
+        
+    </LinearLayout>
+    
+   
+    
+     <!-- 注册第2步,用户名和性别 -->
+     <LinearLayout
+        android:id="@+id/register_step2" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+     
+     <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_step1_tip"
+        style="@style/font_style"/>
+     
+         <EditText
+         android:id="@+id/register_nickname" 
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:background="@drawable/radius_listview_top"
+        style="@style/register_editor_paddingLeft"
+        android:hint="@string/input_nickname" />
+      
+      <Spinner 
+          android:id="@+id/register_sex" 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/radius_listview_bottom"
+         style="@style/register_editor_paddingLeft"/>
+      
+      <Button
+        android:id="@+id/register_btn_reg2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="@string/next_step"
+        android:layout_marginTop="20dp"
+        style="@style/register_btn"/>
+     </LinearLayout>
+     
+      <!-- 注册第3步,绑定学号 -->
+      <LinearLayout
+        android:id="@+id/register_step3" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:layout_marginTop="20dp"
+          android:visibility="gone">
+      
+           
+       <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_step2_tip"
+        style="@style/font_style"/>
+       
+       <EditText
+        android:id="@+id/register_stuid"  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="@drawable/radius_listview_default"
+        style="@style/register_editor_paddingLeft"
+        android:hint="@string/bind_stuid"/>
+       
+       <Button
+        android:id="@+id/register_btn_reg3"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="@string/register_"
+        android:layout_marginTop="20dp"
+        style="@style/register_btn"/>
+       
+     </LinearLayout>
+    
+</LinearLayout>

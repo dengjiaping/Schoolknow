@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:background="@drawable/statusdetail_comment_top_background">
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">      
+         <ImageView
+             android:id="@+id/schoolfellow_item_user_img" 
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:src="@drawable/userimage"
+             android:contentDescription="@string/app_name"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"/>
+         <TextView
+            android:id="@+id/schoolfellow_item_user_nick"
+            android:layout_alignTop="@+id/schoolfellow_item_user_img"
+            android:layout_toRightOf="@+id/schoolfellow_item_user_img"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:textColor="#216184"
+	        android:layout_marginLeft="10dp"/>
+          <TextView
+            android:id="@+id/schoolfellow_item_time"
+            android:layout_toRightOf="@+id/schoolfellow_item_user_img"
+            android:layout_below="@+id/schoolfellow_item_user_nick"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#A4A4A4"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="12sp"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/schoolfellow_item_turn_layout" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+            
+            <TextView
+                android:id="@+id/schoolfellow_item_content" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="#5A595A"
+		        android:textSize="16sp"
+		        android:padding="5dp"/>
+            
+            <com.pw.schoolknow.widgets.NoScrollGridView
+                android:id="@+id/schoolfellow_item_content_gv"  
+                android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:contentDescription="@string/app_name"
+		        style="@style/remove_listview_default"
+		        android:layout_margin="5dp"
+		         android:stretchMode="columnWidth"
+        		android:columnWidth="80dip"
+       	 		android:gravity="center"
+       	 		android:verticalSpacing="5dp"
+       	 		android:horizontalSpacing="5dp"/>
+                       
+  </LinearLayout>
+  </LinearLayout>
+    
+   <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/statusdetail_comment_background_bottom"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        
+       <TextView
+           android:id="@+id/schoolfellow_item_bar_comment" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/timeline_icon_comment"
+           android:drawableLeft="@drawable/timeline_icon_comment"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="30dp"
+           style="@style/qz_detail_toolbar_icon_style"
+           android:text="@string/comment"/>
+       
+       <TextView
+            android:id="@+id/schoolfellow_item_bar_re"  
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/timeline_icon_comment"
+           android:drawableLeft="@drawable/timeline_icon_redirect"
+           android:layout_centerHorizontal="true"
+           style="@style/qz_detail_toolbar_icon_style"
+           android:text="@string/re_send"/>
+       <TextView
+            android:id="@+id/schoolfellow_item_bar_praise"  
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/timeline_icon_comment"
+           android:drawableLeft="@drawable/timeline_icon_like_disable"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="30dp"
+           style="@style/qz_detail_toolbar_icon_style"
+           android:text="@string/praise"/>
+        
+    </RelativeLayout>
+    
+    
+    
+
+</LinearLayout>
+

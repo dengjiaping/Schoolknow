@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:orientation="vertical">
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">      
+         <ImageView
+             android:id="@+id/schoolfellow_item2_user_img" 
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:src="@drawable/userimage"
+             android:contentDescription="@string/app_name"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"/>
+         <TextView
+            android:id="@+id/schoolfellow_item2_user_nick"
+            android:layout_alignTop="@+id/schoolfellow_item2_user_img"
+            android:layout_toRightOf="@+id/schoolfellow_item2_user_img"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:textColor="#216184"
+	        android:layout_marginLeft="10dp"/>
+          <TextView
+            android:id="@+id/schoolfellow_item2_time"
+            android:layout_toRightOf="@+id/schoolfellow_item2_user_img"
+            android:layout_below="@+id/schoolfellow_item2_user_nick"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#A4A4A4"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="12sp"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/schoolfellow_item2_turn_layout" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+            
+            <TextView
+                android:id="@+id/schoolfellow_item2_content" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="#5A595A"
+		        android:textSize="16sp"
+		        android:padding="5dp"/>
+            
+            <com.pw.schoolknow.widgets.NoScrollGridView
+                android:id="@+id/schoolfellow_item2_content_gv"  
+                android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:contentDescription="@string/app_name"
+		        style="@style/remove_listview_default"
+		        android:layout_margin="5dp"
+		         android:stretchMode="columnWidth"
+        		android:columnWidth="80dip"
+       	 		android:gravity="center"
+       	 		android:verticalSpacing="5dp"
+       	 		android:horizontalSpacing="5dp"/>
+                       
+  </LinearLayout>
+  </LinearLayout>
+  <!-- 评论提示 -->
+  <TextView
+      android:id="@+id/schoolfellow_item2_comment_tip" 
+      android:layout_width="match_parent"
+      android:layout_height="20dp"
+      android:background="@color/weibo_bg"
+      android:layout_marginTop="10dp"
+      android:text="@string/comment_1"
+      android:textColor="@color/weibo_textcolor"
+      android:paddingLeft="10dp"
+      android:layout_marginBottom="10dp"/>
+</LinearLayout>
+

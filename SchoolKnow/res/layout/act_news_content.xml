@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3">
+              
+    <WebView
+        android:id="@+id/news_content_webview" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+        
+        <include layout="@layout/part_sorry_tip"/>
+        
+    </LinearLayout>
+
+    
+    <include layout="@layout/part_comment_box"/>
+    
+</RelativeLayout>

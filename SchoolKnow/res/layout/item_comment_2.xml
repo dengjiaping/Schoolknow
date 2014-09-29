@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/press_bg_selector"
+    android:descendantFocusability="blocksDescendants">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:minHeight="45dp">
+    
+    <ImageView
+        android:id="@+id/comment_2_head" 
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/app_name"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="3dp">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginBottom="3dp">
+        	
+            <TextView
+            android:id="@+id/comment_2_nick"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#225CA3"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+            
+            <TextView
+             android:id="@+id/comment_2_time"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#9E9D9C"
+            android:textSize="12sp"
+            android:layout_marginRight="2dp"/>
+            
+        </RelativeLayout>
+        
+        <TextView
+             android:id="@+id/comment_2_content"  
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4A4949"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>
+<include layout="@layout/part_listview_divide"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="#E4E2D7">
+    
+    <com.pw.schoolknow.widgets.XListView
+        android:id="@+id/school_fellow_listview" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="3dp"
+        style="@style/remove_listview_default"
+        android:layout_marginTop="3dp"
+        android:scrollbars="none"
+        android:fastScrollEnabled="true"/>
+    
+
+</LinearLayout>

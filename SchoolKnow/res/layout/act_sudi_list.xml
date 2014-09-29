@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/weibo_bg">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+        <TextView 
+             android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:background="#68B9F8"
+        	android:gravity="center_vertical|center_horizontal"
+        	android:textColor="#fff"
+        	android:paddingTop="10dp"
+        	android:paddingBottom="10dp"
+        	android:text="@string/used_sudi"
+        	android:textStyle="bold"
+        	android:textSize="16sp"/>
+        
+         <GridView
+        android:id="@+id/sudi_list_gv" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#F3F3F3"
+        style="@style/remove_listview_default"
+        android:verticalSpacing="5dp"/>
+        
+    </LinearLayout>
+   
+    <ListView
+        android:id="@+id/sudi_list_lv"  
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        style="@style/remove_listview_default"
+        android:divider="#ccc"
+        android:dividerHeight="0.7dp"/>
+    
+    
+
+</LinearLayout>

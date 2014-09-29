@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="college">
+        <item>土木建筑学院</item>
+        <item>机电工程学院</item>
+        <item>电气与电子工程学院</item>
+        <item>信息工程学院</item>
+        <item>软件学院</item>
+        <item>体育学院</item>
+        <item>基础科学学院</item>
+        <item>外国语学院</item>
+        <item>艺术学院</item>
+        <item>国防生学院</item>
+        <item>经济管理学院</item>
+        <item>人文社会科学学院</item>
+         <item>国际学院</item>
+        <item>轨道交通学院</item>
+        <item>职业技术学院</item>
+    </string-array>
+    <string-array name="college_id">
+        <item>01</item>
+        <item>03</item>
+        <item>02</item>
+        <item>06</item>
+        <item>21</item>
+        <item>05</item>
+        <item>08</item>
+        <item>09</item>
+        <item>11</item>
+        <item>61</item>
+        <item>04</item>
+        <item>07</item>
+         <item>12</item>
+        <item>13</item>
+        <item>51</item>
+    </string-array>
+</resources>

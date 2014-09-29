@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+    
+    <TextView
+        android:id="@+id/ask_ranking_item_num" 
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"/>
+    
+     <com.pw.schoolknow.widgets.RoundedImageView
+        android:id="@+id/ask_ranking_item_head" 
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/userimage"
+        android:layout_marginLeft="40dp"/>
+    
+     <TextView
+         android:id="@+id/ask_ranking_item_name" 
+         android:layout_toRightOf="@+id/ask_ranking_item_head" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2E65A8"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"/>
+     
+      <TextView
+          android:id="@+id/ask_ranking_item_score"  
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#222222"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"/>
+    
+
+</RelativeLayout>

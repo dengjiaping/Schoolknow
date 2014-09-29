@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <TextView 
+	    android:id="@+id/mypopmenu_textView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/bg_popmenu_item"
+	    android:clickable="false"
+	    android:drawablePadding="10dip"
+	    android:gravity="center_horizontal"
+	    android:textColor="@color/white"
+	    android:textSize="16.0sp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"/>
+    
+</LinearLayout>

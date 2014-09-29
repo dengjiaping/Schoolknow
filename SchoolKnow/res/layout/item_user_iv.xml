@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/press_bg_selector"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp">
+    
+    <ImageView
+        android:id="@+id/user_item_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/app_name"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+    
+    <TextView
+        android:id="@+id/user_item_title" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_item_img"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="#313031"
+        android:textSize="17sp"/>
+    
+    <TextView
+        android:id="@+id/user_item_num"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_item_title"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_tabbar_indicator2"
+        android:minWidth="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+    
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/skin_icon_forward" />
+    
+</RelativeLayout>
+<include layout="@layout/part_listview_divide"/>
+
+</LinearLayout>

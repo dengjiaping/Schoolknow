@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212021">
+    
+    
+    <RelativeLayout
+        android:id="@+id/img_load_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/url_image_loading"
+            android:contentDescription="@string/app_name"/>
+        
+         <ProgressBar 
+	        android:id="@+id/img_load_progress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="?android:attr/progressBarStyleSmallTitle"
+	        android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true"/>
+        
+        
+    </RelativeLayout>
+    
+   
+    
+    <com.pw.schoolknow.widgets.ZoomImageView
+        android:id="@+id/img_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@null">
+        
+        <ImageButton
+            android:id="@+id/preview_btn_save" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/preview_save_icon_highlighted"
+            android:background="@drawable/preview_button_highlighted"
+            android:layout_margin="10dp"/>
+        
+    </LinearLayout>
+    
+    
+    
+
+</RelativeLayout>
+

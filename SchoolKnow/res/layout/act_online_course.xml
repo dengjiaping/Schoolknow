@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DBDCE4">
+    
+    <ListView
+        android:id="@+id/online_course_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/remove_listview_default"
+        android:divider="#CCCCCD"
+        android:dividerHeight="0.8dp"/>
+    
+
+    
+
+</LinearLayout>

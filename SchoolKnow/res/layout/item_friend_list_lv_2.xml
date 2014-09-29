@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/friend_head_layout"
+        android:layout_marginLeft="3dp">
+        
+        <TextView
+          android:id="@+id/firend_list_tool_text" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/suggest_friend"
+          style="@style/friend_head_title"
+          android:textSize="16sp"/>
+        
+        <ImageView 
+          android:id="@+id/firend_list_tool_icon" 
+          style="@style/friend_head_arrow"
+          android:contentDescription="@string/app_name"/>
+        
+</RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:background="#ccc"/>
+    
+</LinearLayout>

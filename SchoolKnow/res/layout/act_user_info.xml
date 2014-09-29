@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/weibo_bg">
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:layout_marginTop="5dp">
+    
+     <!-- 头像 -->
+    <RelativeLayout
+        android:id="@+id/user_info_head_layout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_top">
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/head"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        
+        <ImageView
+            android:id="@+id/user_info_head"  
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="30dp"/>
+        
+    </RelativeLayout>
+    <!-- 账号 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_bottom">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/user"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <TextView
+            android:id="@+id/user_info_uid" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/download"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#8A8A8A"/>
+        
+        
+    </RelativeLayout>
+    
+    <!-- 昵称 -->
+     <RelativeLayout
+         android:id="@+id/user_info_nick_layout"   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_top"
+        android:layout_marginTop="10dp">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/nickname"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <TextView
+             android:id="@+id/user_info_nickname"  
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+             android:layout_marginRight="40dp"
+            android:textColor="#8A8A8A"
+            android:layout_centerVertical="true"/>
+        
+        
+    </RelativeLayout>
+    <!-- 性别 -->
+     <RelativeLayout
+         android:id="@+id/user_info_sex_layout"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_center">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/sex"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <TextView
+            android:id="@+id/user_info_sex" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#8A8A8A"
+            android:layout_centerVertical="true"/>
+        
+        
+    </RelativeLayout>
+    <!-- 学院 -->
+     <RelativeLayout
+        android:id="@+id/user_info_college_layout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_bottom">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/college"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <TextView
+            android:id="@+id/user_info_college"  
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/download"
+            android:layout_marginRight="40dp"
+            android:textColor="#8A8A8A"
+            android:layout_centerVertical="true"/>
+        
+        
+    </RelativeLayout>
+    
+    <!-- 绑定学号 -->
+    <RelativeLayout
+        android:id="@+id/user_info_bindstuid_layout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_default"
+        android:layout_marginTop="10dp">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/user_bind_stuid"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <TextView
+            android:id="@+id/user_info_bindstuid"  
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/no_bind_stuid"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textColor="#8A8A8A"/>
+        
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>
+    
+    
+</ScrollView>

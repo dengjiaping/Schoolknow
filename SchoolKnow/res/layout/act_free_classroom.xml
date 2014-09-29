@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/weibo_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    
+    <Spinner
+        android:id="@+id/free_classroom_week"  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_select_n"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"/>
+    
+    <Spinner
+        android:id="@+id/free_classroom_xingqi"  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_select_n"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"/>
+    
+    <Spinner
+        android:id="@+id/free_classroom_jieci"  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_select_n"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"/>
+    <Spinner
+        android:id="@+id/free_classroom_address"  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_select_n"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"/>
+    
+    <Button
+        android:id="@+id/free_classroom_sumbit"  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:background="@drawable/btn_green_selector"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+    
+
+</LinearLayout>

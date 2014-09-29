@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#6192C8">
+    
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thanks_count_score"
+        android:textColor="#fcfcfc"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+    
+    <TextView
+        android:id="@+id/score_data_head_name" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView
+        android:id="@+id/score_data_head_stuid"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"/>
+    
+    <TextView
+        android:id="@+id/score_data_head_avescore"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"/>
+    
+    <LinearLayout 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+        
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="@string/class_ranking"/>
+        
+        <FrameLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+        	
+            <ProgressBar
+                android:id="@+id/score_data_head_pb" 
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	style="?android:attr/progressBarStyleSmall"
+	        	android:layout_gravity="center_vertical"/>
+        	
+             <TextView
+	        android:id="@+id/score_data_head_classrank"  
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:textSize="16sp"/>
+            
+        </FrameLayout>
+        
+    </LinearLayout>
+     <TextView
+        android:id="@+id/score_data_head_majorank"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/major_ranking"/>
+</LinearLayout>

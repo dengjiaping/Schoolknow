@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/qz_bg_container_cell_normal"
+    android:paddingLeft="10dp">
+    
+    <TextView
+        android:id="@+id/find_person_list_stuId" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"/>
+    <TextView
+        android:id="@+id/find_person_list_classId" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"/>
+    <TextView
+        android:id="@+id/find_person_list_name" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"/>
+    <TextView
+        android:id="@+id/find_person_list_sex" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"/>
+    <TextView
+        android:id="@+id/find_person_list_birth" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/find_person_list_major" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"/>
+    <TextView
+        android:id="@+id/find_person_list_nation" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"/>
+    <TextView
+        android:id="@+id/find_person_list_politics" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"/>
+    <TextView
+        android:id="@+id/find_person_list_address" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"/>
+    <TextView
+        android:id="@+id/find_person_list_status" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7B7B7B"/>
+    
+</LinearLayout>
+
+

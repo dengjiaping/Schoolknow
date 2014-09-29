@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:minHeight="85dp">
+    
+    <com.pw.schoolknow.widgets.MyTextView
+        android:id="@+id/schedule_week_title"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#9B9B9B"
+        android:textStyle="bold"
+        android:background="#EBEAE7"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        
+      <TextView
+        android:id="@+id/schedule_week_s1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        style="@style/schedule_week_item_style"/>
+      <TextView
+        android:id="@+id/schedule_week_s2"
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        style="@style/schedule_week_item_style"/>
+       <TextView
+        android:id="@+id/schedule_week_s3"
+      android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        style="@style/schedule_week_item_style"/>
+        <TextView
+        android:id="@+id/schedule_week_s4"
+      android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        style="@style/schedule_week_item_style"/>
+         <TextView
+        android:id="@+id/schedule_week_s5"
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        style="@style/schedule_week_item_style"/>
+          <TextView
+        android:id="@+id/schedule_week_s6"
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        style="@style/schedule_week_item_style"/>
+           <TextView
+        android:id="@+id/schedule_week_s7"
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+       style="@style/schedule_week_item_style"/>
+        
+    </LinearLayout>
+     
+    
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+        
+        <RadioGroup
+            android:id="@+id/main_radiogp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tabbar_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <RadioButton
+                android:id="@+id/radio_button1"
+                style="@style/tabbar_item"
+                android:tag="radio_button0"
+                android:text="@string/tabbar_item1"
+                android:drawableTop="@drawable/tabbar_home" />
+            
+            <RadioButton
+                android:id="@+id/radio_button2"
+                style="@style/tabbar_item"
+                android:tag="radio_button0"
+                android:text="@string/tabbar_item2"
+                android:drawableTop="@drawable/tabbar_discover" />
+            
+            <RadioButton
+                android:id="@+id/radio_button3"
+                style="@style/tabbar_item"
+                android:tag="radio_button0"
+                android:text="@string/tabbar_item3"
+                android:drawableTop="@drawable/tabbar_profile"/>
+            
+            <RadioButton
+                android:id="@+id/radio_button4"
+                style="@style/tabbar_item"
+                android:tag="radio_button0"
+                android:text="@string/tabbar_item4"
+                android:drawableTop="@drawable/tabbar_message_center"/>
+            
+            <RadioButton
+                android:id="@+id/radio_button5"
+                style="@style/tabbar_item"
+                android:tag="radio_button0"
+                android:text="@string/tabbar_item5"
+                android:drawableTop="@drawable/tabbar_more" />
+            
+        </RadioGroup>
+
+        
+    </LinearLayout>
+    
+</TabHost>

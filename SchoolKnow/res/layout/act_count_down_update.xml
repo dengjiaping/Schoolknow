@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6E6E6"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_top"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/weibo_textcolor"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"/>
+        
+         <EditText
+           android:id="@+id/count_down_update_title"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:inputType="text"
+	       android:background="@null"
+	       android:gravity="right"
+	       android:layout_marginRight="15dp"
+	       android:layout_marginLeft="10dp"
+	       android:textSize="14sp"
+	       android:textColor="#090909"/>
+        
+    </LinearLayout>
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_center"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textColor="@color/weibo_textcolor"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"/>
+        
+         <TextView
+           android:id="@+id/count_down_update_dat"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:background="@null"
+	       android:gravity="right"
+	       android:layout_marginRight="15dp"
+	       android:layout_marginLeft="10dp"
+	       android:textSize="14sp"
+	       android:textColor="#090909"/>
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_center"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textColor="@color/weibo_textcolor"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"/>
+        
+         <TextView
+           android:id="@+id/count_down_update_time"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:background="@null"
+	       android:gravity="right"
+	       android:layout_marginRight="15dp"
+	       android:layout_marginLeft="10dp"
+	       android:textSize="14sp"
+	       android:textColor="#090909"/>
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_listview_bottom"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textColor="@color/weibo_textcolor"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"/>
+        
+         <EditText
+           android:id="@+id/count_down_update_address"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:inputType="text"
+	       android:background="@null"
+	       android:gravity="right"
+	       android:layout_marginRight="15dp"
+	       android:layout_marginLeft="10dp"
+	       android:textSize="14sp"
+	       android:textColor="#090909"/>
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/count_down_update_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="@string/sure"
+        android:layout_marginTop="25dp"
+        style="@style/register_btn"/>
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/press_bg_selector"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp">
+    
+    <TextView
+        android:id="@+id/list_item_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/jwc_text_bg"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        android:shadowColor="#666"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"/>
+    
+    <TextView
+        android:id="@+id/list_item_title" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/list_item_img"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="#313031"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/pic_arrows" />
+    
+</RelativeLayout>
+<include layout="@layout/part_listview_divide"/>
+
+</LinearLayout>

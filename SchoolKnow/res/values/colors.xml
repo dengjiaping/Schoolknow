@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#ffffff</color>
+    <color name="gray">#cccccc</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="default_bg">#EEEDE6</color>
+    
+    <color name="title_bar_bg">#FDF9FA</color>
+    
+    <color name="dedede">#DEDEDE</color>
+    
+    <color name="index_item_press">#F4F4F3</color>
+    <color name="countdown_bg_hover">#EEEEEE</color>
+    
+    
+    <color name="weibo_bg">#E6E6E6</color>
+    <color name="weibo_textcolor">#707070</color>
+    
+     <color name="none_color">#00000000</color>
+    <color name="bule_overlay">#660D92DD</color>
+    
+    <color name="green">#008000</color><!--绿色 -->
+</resources>

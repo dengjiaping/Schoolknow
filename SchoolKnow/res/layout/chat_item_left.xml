@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/chat_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="3dp"
+        android:background="@drawable/chat_time_bg"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/user_icon" 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/app_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView
+            android:id="@+id/chat_message_content"  
+            android:layout_toRightOf="@+id/user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/aio_friend_bg"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:textSize="16sp"/>
+        
+        <ImageView
+            android:id="@+id/chat_message_img" 
+            android:layout_toRightOf="@+id/user_icon" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:enabled="false"
+			android:layout_marginLeft="15dp"
+			android:visibility="gone"
+			android:contentDescription="@string/app_name"/>
+        
+    </RelativeLayout>
+    
+  
+    
+
+</LinearLayout>

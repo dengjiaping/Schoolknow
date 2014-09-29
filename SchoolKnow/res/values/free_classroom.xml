@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="week">
+         <item>第1周</item>
+         <item>第2周</item>
+         <item>第3周</item>
+         <item>第4周</item>
+         <item>第5周</item>
+         <item>第6周</item>
+         <item>第7周</item>
+         <item>第8周</item>
+         <item>第9周</item>
+         <item>第10周</item>
+         <item>第11周</item>
+         <item>第12周</item>
+         <item>第13周</item>
+         <item>第14周</item>
+         <item>第15周</item>
+         <item>第16周</item>
+         <item>第17周</item>
+         <item>第18周</item>
+         <item>第19周</item>
+         <item>第20周</item>
+    </string-array>
+    
+    <string-array name="xingqi">
+        <item >星期一</item>
+        <item >星期二</item>
+        <item >星期三</item>
+        <item >星期四</item>
+        <item >星期五</item>
+        <item >星期六</item>
+        <item >星期天</item>
+    </string-array>
+    
+     <string-array name="jieci">
+        <item >1&#8211;2节</item>
+        <item >3&#8211;4节</item>
+        <item >5&#8211;6节</item>
+        <item >7&#8211;8节</item>
+        <item >9&#8211;10节</item>
+    </string-array>
+    
+   <string-array name="where">
+       <item >全部教室</item>
+        <item >6栋教室</item>
+        <item >7栋教室</item>
+        <item >8栋教室</item>
+        <item >9栋教室</item>
+        <item >10栋教室</item>
+        <item >11栋教室</item>
+        <item >12栋教室</item>
+        <item >13栋教室</item>
+        <item >15栋教室</item>
+        <item >19栋教室</item>
+        <item >22栋教室</item>
+        <item>研究生教室</item>
+        <item>机房</item>
+        <item>计算机中心</item>
+        <item>学生活动中心</item>
+        <item>实验室</item>
+    </string-array>
+    
+</resources>

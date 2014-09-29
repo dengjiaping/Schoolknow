@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    
+    <Spinner
+        android:id="@+id/exam_search_grade"  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_select_n"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"/>
+    
+    <Spinner
+        android:id="@+id/exam_search_class" 
+        android:layout_below="@+id/exam_search_grade" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_select_n"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+    
+    <Button
+        android:layout_below="@+id/exam_search_class"
+       	android:id="@+id/exam_search_btn"  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:background="@drawable/btn_green_selector"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/common_button_white_left_bg"
+            android:text="@string/continue_last_search"
+            android:textColor="#828282"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/common_button_white_right_bg"
+            android:text="@string/search_my_score"
+            android:textColor="#828282"/>
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/weibo_bg">
+    
+     
+    <ListView 
+        android:id="@+id/score_data_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ccc"
+        android:dividerHeight="0.5dp"
+        android:paddingBottom="20dp"
+        style="@style/remove_listview_default"/>
+        
+    
+
+</LinearLayout>

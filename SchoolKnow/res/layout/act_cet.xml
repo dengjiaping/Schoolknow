@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weibo_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    
+    
+    <EditText
+        android:id="@+id/cet_edit_id" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/cet_name"
+        android:background="@drawable/radius_listview_default"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"/>
+    
+     <EditText
+        android:layout_below="@+id/cet_edit_id"
+        android:id="@+id/cet_edit_pwd" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/cet_zuz"
+        android:background="@drawable/radius_listview_default"
+        android:paddingLeft="20dp"
+         android:textSize="16sp"/>
+     
+    
+    
+    <Button
+        android:layout_below="@+id/cet_edit_pwd"
+        android:id="@+id/cet_login_btn"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+        android:background="@drawable/btn_green_selector"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="@string/search"/>
+    
+    
+
+</RelativeLayout>

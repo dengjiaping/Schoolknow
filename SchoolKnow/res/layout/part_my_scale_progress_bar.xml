@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.pw.schoolknow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+     <com.pw.schoolknow.widgets.RoundProgressBar
+       android:id="@+id/my_scale_progress_bar"
+       android:layout_width="45dip"
+       android:layout_height="45dip"
+       android_custom:roundColor="#333"
+        android_custom:roundProgressColor="#D1D1D1"
+        android_custom:textColor="#fff"
+        android_custom:roundWidth="3dip"
+        android_custom:textSize="14sp"
+       android_custom:textIsDisplayable="true" />
+    
+
+</LinearLayout>
